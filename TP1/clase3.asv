@@ -10,8 +10,9 @@ close all
     Nro_vueltas=12;
     
     
+
+    for(temperatura=5:-0.1:0)
         matriz=matriz_original;
-    for(temperatura=5:-0.025:0)
         for(n=1:Nro_vueltas)
             Vector_aleatorio=randperm(length(matriz_original(:)));
             longitud_vector=length(Vector_aleatorio);
@@ -30,6 +31,5 @@ close all
         vector_temperatura(indice_v)=temperatura;
         indice_v=indice_v+1;
     end
-
-
-    plot(vector_temperatura,(vector_M))
+    
+    plot(vector_temperatura,abs(vector_M))

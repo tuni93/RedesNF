@@ -1,0 +1,2 @@
+
+function [energia]=funcion_energia_total(matriz,posicion_i,posicion_j)
