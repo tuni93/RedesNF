@@ -4,6 +4,7 @@ close all;
 %% Guia 2
 % Defino mi vector de pesos W
 W_max=2;
+%W=W_max*rand(3,1);
 W=W_max*rand(3,1);
 %W=[W;1];
 %Defino nu
